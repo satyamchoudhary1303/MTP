@@ -3,7 +3,7 @@ import csv
 import time
 
 # Replace COM3 with your Pico's COM port
-ser = serial.Serial('COM6', 115200)
+ser = serial.Serial('COM10', 115200)
 time.sleep(2)  # wait for serial connection to initialize
 
 with open("angle_log.csv", "w", newline='') as f:
