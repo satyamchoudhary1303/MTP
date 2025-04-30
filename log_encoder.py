@@ -6,7 +6,7 @@ import time
 ser = serial.Serial('COM10', 115200)
 time.sleep(2)  # wait for serial connection to initialize
 
-with open("angle_log.csv", "w", newline='') as f:
+with open("data/angle_log.csv", "w", newline='') as f:
     writer = csv.writer(f)
     writer.writerow(["Timestamp (s)", "Angle (deg)"])
     
